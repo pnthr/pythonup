@@ -77,14 +77,25 @@ print(b)
 - Datatypes represent the properties that a value can possess.
 - They detail the characteristics computers can use to distinguish various inputs.
 - Most programming languages have similar primitive data types which are: `Numbers (Integers), Strings and Booleans`
-- Different data types also have different operators that can be used on them.
-- Operators here could include addition, subtraction, length, etc.
-- Operators do not work every data type. E.g. You can square a number, but squaring a string does not make sense.
-- Also you cannot do these operations of different data types, e.g. you cannot subtract `"hello"` from `300`
+- ```python
+    # Numbers
+    numb = 1, 3, 5
 
-> Do Kaggle Classwork
+    # Strings
+    strings = "name", "Lagos", "This is could be a paragraph", "345"
+
+    # Boolean
+    bools = True, False
+  ```
+
+  > Do Kaggle Classwork
 
 ## Operators
+
+- Different data types also have different operators that can be used on them.
+- Operators here could include addition, subtraction, length, etc.
+- Operators do not work for every data type. E.g. You can square a number, but squaring a string does not make sense.
+- Also you cannot do these operations of different data types, e.g. you cannot subtract `"hello"` from `300`
 
 ### Arithmetic Operators
 
@@ -98,7 +109,7 @@ print(b)
 
 #### Classwork
 
-Give an example where the modulo operator could be useful?
+Give an example of scenarios where the modulo operator could be useful?
 
 ```python
 score = 57
@@ -142,10 +153,79 @@ else:
 print("Jame" == "James")
 ```
 
-### Logical Operators
+### Logic Operators
 
 > Used usually for expressions that yield boolean values
 
 - **AND**
 - **OR**
 - **NOT**
+
+- These logic operators are very important because they instruct the computer on how to make decisions. So you can write a statement that says if age is greater than 21 and money is equal or greater than cost, print `you can have whiskey`.
+
+#### Example
+
+```python
+name = 'John'
+age = 22
+money = 6
+cost = 9
+if age > 21 and money > cost:
+    print(f'you can have whiskey and your change is {money - cost}')
+if age < 21 or money < cost:
+    print(f'you cannot have whiskey')
+    if money > cost:
+        print('because you are underage')
+    else:
+        print('because you do not have enough money')
+```
+
+#### Classwork
+
+What would these expressions print?
+
+```python
+gender1 = "male"
+profession1 = "lawyer"
+gender2 = "female"
+profession2 = "astronaut"
+if gender == "male" or gender == "female":
+  print("we have a living organism")
+```
+
+### String Operations
+
+> As we said earlier, not all operators work on every data type. There are special operators for the string type and we will look at a few now.
+
+#### Concatenation (Addition)
+
+- Also called string addition, it's a way to combine multiple strings into one.
+
+  ```python
+  print('hallo' + " zusammen!")
+  print('his age is ' + 34) # will this work?
+
+  ```
+
+- So it's called a "string" because technically it's just a string of characters.
+- And what defines a string in python? Being enclosed in double or single quotes.
+
+#### To string conversion
+
+`print(str(4))`
+
+#### ClassWork
+
+```python
+print(a+str(b) == 54) #what do we get?
+
+```
+
+### MISC
+
+```python
+  # Figure out what type it is
+  print(type(45, "I am a string"))
+```
+
+> If you need to learn more string functionalities, go online, search things and learn by yourself.
