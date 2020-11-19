@@ -115,9 +115,11 @@
 - Say we don't want to print the result from a function, but use it somewhere else in our code, how do we do that? we use a return statement.
 - It tells the computer that our program has ended and it should send back the value of whatever we put after it(return).
 - A return statement marks the end of a function, and the function exits.
+- When a function does not return any value, it is called a void function.
 - Effects that are observable outside the function, except the return of a value, are called side effects.
 
 ### Named Arguments (or keyword or Optional Parameters) and Positional Arguments
 
+- Although used interchangeably, a parameter is what is defined along the function, while an argument is what is passed while calling the function.
 - When an argument is required and a default value is not provided in the function definition, it is called a positional argument.
 - When an argument is instantiated with a default value in the function, it is a named argument or an optional parameter.
