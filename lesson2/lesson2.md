@@ -32,4 +32,9 @@ The question leads us to our first control flow structure
 
 ## Loops
 
+> An instruction in a computer program which runs endlessly until a condition is met, is a loop
+
 ### While Loops
+
+- A while loop instructs the computer to keep running a program **while** a condition remains true, and end it once it becomes false.
+- Show `control_flow_4`
