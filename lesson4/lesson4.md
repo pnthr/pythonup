@@ -68,9 +68,35 @@ To see other features of lists check the [link](https://docs.python.org/3/tutori
 
 ## Dictionaries
 
-These are 'containers' with unordered key-value pairs of elements. An analogy is that they are like a table:
+These are 'containers' with unordered key-value pairs of elements.
+
+![dict_structure](dict_structure.png)
+An analogy is that they are like a table:
 
 | key  | value  |
 | ---- | ------ |
 | name | "John" |
 | age  | 23     |
+
+### Accessing dictionary content
+
+#### Get value
+
+`my_dict['name'] # "John"`
+
+#### Add value
+
+`my_dict['occupation'] = "Artist" # "John"`
+
+#### See all keys
+
+`list(my_dict.keys())`
+
+#### Delete an entry
+
+`my_dict.del("occupation")`
+
+## Classwork
+
+- Write a function that prints out all the elements in a list (using a while loop).
+- Write a function that outputs all the number from 0 to n
